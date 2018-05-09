@@ -1,0 +1,9 @@
+---
+- hosts: all
+  vars:
+    var1: "Sample var"
+    
+  tasks: 
+  - name: Print var1
+    debug: 
+      msg: "var name - {{ var1 }}"
